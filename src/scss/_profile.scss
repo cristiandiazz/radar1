@@ -1,0 +1,105 @@
+@import '_variables.scss';
+@import '_mixin.scss';
+
+.profile {
+    height: 100%;
+
+    &__container {
+        @include flex-column;
+        height: 100%;
+    }
+    &__header {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 1rem;
+        flex-grow: 2;
+    }
+
+    &__image {
+        background-image: url('../assets/jbalvin.png');
+        border-radius: 50%;
+        width: 15rem;
+        height: 15rem;
+    }
+
+    &__status {
+        display: flex;
+        position: absolute;
+        background-color: $onlineStatusColor;
+		height: 60px;
+		width: 60px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content:center;
+        color: $white;
+        top: 20%;
+        right: 15%;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+    }
+
+    &__detail {
+        @include flex-column;
+        align-items: center;
+        padding: 0rem 1rem;
+        flex-grow: 2;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__name {
+        margin: 0;
+        font-weight: lighter;
+        font-size: 1.3rem;
+    }
+
+    &__location {
+        text-transform: capitalize;
+        color: $pink;
+        font-weight: bold;
+        margin-bottom: 0;
+        margin-top: 0.5rem;
+    }
+
+    .detail--left {
+        @include flex-column;
+        justify-content: space-between;
+    }
+
+    .detail--right {
+        width: 2rem;
+        fill: white;
+        filter: drop-shadow(0px 0px 20px #000000);
+    }
+
+    &__description {
+        color: $black;
+    }
+
+    &__footer {
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    &__footer-button {
+        width: 100%;
+        background-color: $black;
+        color: $white;
+		text-transform: uppercase;
+    }
+}
+
+#link {
+    display: block;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,7 @@
+{
+	"transform": {
+		"^.+\\.js$": "babel-jest",
+		"^.+\\.html?$": "html-loader-jest"
+	},
+	"testEnvironment": "jsdom"
+}

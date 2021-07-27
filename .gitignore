@@ -1,0 +1,34 @@
+# compiled output
+/dist
+
+# Bower dependency directory (https://bower.io/)
+bower_components
+
+
+# IDE - VSCode
+.vscode/*
+
+# misc
+.sass-cache
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Output of 'npm pack'
+*.tgz
+
+# System Files
+.DS_Store
+Thumbs.db
